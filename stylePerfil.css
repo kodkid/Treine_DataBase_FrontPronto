@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-image: url(/img/background_LinkFlorest.2580jpg.jpg);
+    background-size: 2600x 2100px cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    display: block;
+    height: 30px;
+    width: auto;
+    background-color: blue;
+}
+
+.container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    background-color: 	#800000;
+}
+
+.container .menu ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.container .menu ul li {
+    margin: 8px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    
+}
+
+.container .menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.container .menu ul li a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.container .titulo {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    width: 100px;
+
+}
+.container .titulo h1{
+    margin: 4px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.containerPerfil {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 2px solid white;
+    padding: 20px;
+    width: 50%;
+    max-width: 400px; /* Defina uma largura máxima para o bloco flutuante */
+    box-sizing: border-box; /* Adiciona padding e borda ao tamanho total do bloco */
+}
+
+.containerPerfil .perfilFloat {
+    width: 100%; /* Faça o input ocupar toda a largura do bloco flutuante */
+}
+
+.containerPerfil .perfilFloat input[type="text"],
+.containerPerfil .perfilFloat input[type="password"],
+.containerPerfil .perfilFloat input[type="submit"] {
+    width: calc(100% - 20px); /* Calcula a largura do input subtraindo o padding */
+    margin-bottom: 10px; /* Adiciona um espaço entre os inputs */
+    padding: 8px; /* Adiciona um padding ao input */
+    box-sizing: border-box; /* Adiciona padding ao tamanho total do input */
+}
+
+.containerPerfil .tituloCadastro {
+    text-align: center;
+    background-color: silver;
+    height: 30px;
+    padding: 20px;
+}
+
+.containerPerfil .tituloCadastro h1 {
+    margin: 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.containerPerfil .perfilFloat h1 {
+    color: white;
+}
+.containerPerfil .perfilFloat p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.containerPerfil .perfilFloat input[type="button"] {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    pad: 10px;
+
+}
+
+.containerPerfil .perfilFloat input:hover[type="button"] {
+   background-color: bisque;
+   transition: 0.2;
+   color: green;
+
+}
